@@ -17,14 +17,10 @@ namespace InterfaceTest
 
     class CKnight:IType
     {
-        string type="knight";
-        public string Type { get; }
-        int atk = 2;
-        public int Atk { get; }
-        int def = 10;
-        public int Def { get; }
-        int hp = 100;
-        public int Hp { get; }
+        public string Type { get { return "knight"; } }
+        public int Atk { get { return 2; } }
+        public int Def { get { return 10; } }
+        public int Hp { get { return 100; } }
         public int isDamaged(int hp,int atk,int def)
         {
             int damage = atk - def ;
